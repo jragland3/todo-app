@@ -1,0 +1,39 @@
+.title {
+  margin: 1em;
+  margin-left: 20rem;
+}
+
+.addItemButton {
+  padding-bottom: 2em;
+  margin-left: 29rem;
+}
+
+.addItemForm {
+  margin-left: 21rem;
+  float:none;
+}
+
+.textInput {
+  display: block;
+}
+
+.todoList {
+  padding-left: 4rem;
+}
+
+.todoList li {
+  padding-right: 10rem;
+  margin-bottom: 1rem;
+}
+
+.removeButton {
+  margin-left: 1em;
+  padding-top: .2rem;
+  padding-bottom: .2rem;
+}
+
+.submitButton {
+  margin: 2em;
+  margin-left: 5rem;
+}
+
