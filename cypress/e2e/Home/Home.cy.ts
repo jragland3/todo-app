@@ -2,10 +2,10 @@ import React from "react"
 
 describe('Home page', () => {
   before(() => {
-    cy.visit('/')
+    cy.visit('/');
   })
 
-  it('Add Item button displays text input', () => {
+  it('Add Item button displays text input box and its buttons', () => {
     cy.get('.addItemButton button').click();
     cy.get('.addItemForm').should('be.visible');
     cy.get('.submitButton').should('be.visible');

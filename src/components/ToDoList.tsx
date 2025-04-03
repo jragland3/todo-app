@@ -4,7 +4,7 @@ function ToDoList() {
     const { toDoList, removeTodo, toggleTodo } = useGlobal();
 
     return (
-        <div className='todoList'>
+        <div className='todoList' data-test="todoList">
             <h2>Todo List</h2>
             <ul>
                 {toDoList.map((todo) => (
@@ -17,7 +17,12 @@ function ToDoList() {
                         >
                             {todo.text}
                         </span>
-                        <button className='removeButton' onClick={() => removeTodo(todo.id)}>Remove</button>
+                        <button
+                            className='removeItemButton'
+                            onClick={() => removeTodo(todo.id)}
+                            data-test="removeItemButton">
+                                Remove
+                        </button>
                     </li>
                 ))}
             </ul>
