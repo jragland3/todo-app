@@ -1,4 +1,15 @@
-# React + TypeScript + Vite
+# Josh's Todo App
+This app will let you manage a list of todo items.
+
+## Install dependencies
+Install dependencies with npm using the following from the project's home directory:
+`npm install`
+
+## Running the application
+Run the application using the follwing from the project's home directory:
+`npm run dev`
+
+## React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
@@ -52,3 +63,15 @@ export default tseslint.config({
   },
 })
 ```
+
+## Cypress Testing Framework
+This application utilizes Cypress for Component and E2E Testing.
+
+To run cypress, use the following in the project's home directory:
+`npm run cy:open`
+
+Once the Cypress GUI is displayed, select one of the following testing types:
+- E2E
+  - Tests all the components together
+- Component
+  - Tests components' basic features without any interaction with other components
