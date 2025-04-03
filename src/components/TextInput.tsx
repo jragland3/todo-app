@@ -21,18 +21,29 @@ function TextInput() {
 
     return (
         <>
-            <div className="addItemForm">
+            <div className="addItemForm" data-test="addItemForm">
                 {displayTextInput ? (
                     <div>
                         <textarea 
-                            className="textInput"
+                            className="textInputBox"
                             cols={50}
                             rows={5}
                             value={inputText}
                             onChange={handleInputChange}
-                            placeholder="Enter your task..."/>
-                        <button className="submitButton" onClick={handleSubmit}>Submit</button>
-                        <button className="cancelButton" onClick={ () => changeDisplay(false) }>Cancel</button>
+                            placeholder="Enter your task..."
+                            data-test="textInputBox"/>
+                        <button 
+                            className="submitButton"
+                            onClick={handleSubmit}
+                            data-test="submitButton">
+                                Submit
+                        </button>
+                        <button
+                            className="cancelButton"
+                            onClick={ () => changeDisplay(false) }
+                            data-test="cancelButton">
+                                Cancel
+                        </button>
                     </div>
                 ) : <></>}
             </div>

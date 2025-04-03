@@ -13,7 +13,7 @@
   float:none;
 }
 
-.textInput {
+.textInputBox {
   display: block;
 }
 
@@ -26,7 +26,7 @@
   margin-bottom: 1rem;
 }
 
-.removeButton {
+.removeItemButton {
   margin-left: 1em;
   padding-top: .2rem;
   padding-bottom: .2rem;
